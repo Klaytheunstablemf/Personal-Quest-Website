@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Quest</title>
+  <link rel="stylesheet" href="style-login.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <img src="logo-website-removebg-preview.png" class="img">
+      <span class="brand-name"><h2 class="logo-head">Personal Quest</h2></span>
+    </nav>  
+  </header>
+
+  <div class="back">
+    <a href="main.html"><i class="fa fa-chevron-left" id="back">  Back to Homepage</i></a>
+  </div>
+
+  <div class="left-container">
+    <div class="welcome">
+      <h1>Welcome to Personal Quest!</h1><br>
+    </div>
+    <div class="par">
+      <p>We hope you've found the guidance and support you seek<br>
+        on your personal journey with us. At Personal Quest,<br>
+        our commitment is to offer a seamless and professional experience,<br>
+        and we're always ready to assist you with any <br> challenges you may encounter along your path.</p>
+    </div>
+  </div>
+
+  <div class="wrapper" id="right-container">
+    <header class="login">Login</header>
+    <form onsubmit="return authenticateLogin()">
+      <div class="field email">
+        <div class="input-area">
+          <input type="text" id="login-email" placeholder="Email Address">
+          <i class="icon fas fa-envelope"></i>
+          <i class="error error-icon fas fa-exclamation-circle"></i>
+        </div>
+        <div class="error error-txt">Email can't be blank</div>
+      </div>
+      <div class="field password">
+        <div class="input-area">
+          <input type="password" id="login-password" placeholder="Password">
+          <i class="icon fas fa-lock"></i>
+          <i class="error error-icon fas fa-exclamation-circle"></i>
+        </div>
+        <div class="error error-txt">Password can't be blank</div>
+      </div>
+ 
+      <input type="submit" value="Login">
+    </form>
+    <div class="sign-txt">Not yet a member? <a href="sign-up.html">Signup now</a></div>
+  </div>
+
+  <script src="script-login.js"></script>
+</body>
+</html>

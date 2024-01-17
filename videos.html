@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style-videos.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+</head>
+<body>
+    <nav class="sidebar">
+        <a href="#" class="logo">Personal Quest</a>
+  
+        <div class="menu-content">
+          <ul class="menu-items">
+            <div class="menu-title">Menu</div>
+  
+            <li class="item">
+              <div class="submenu-item">
+                <a href="home-page.html">Home</a>
+   
+              </div>
+            </li>
+  
+            <li class="item">
+              <div class="submenu-item">
+                <span>Entertainment</span>
+                <i class="fa-solid fa-chevron-right"></i>
+              </div>
+  
+              <ul class="menu-items submenu">
+                <div class="menu-title">
+                  <i class="fa-solid fa-chevron-left"></i>
+                  entertainment
+                </div>
+                <li class="item">
+                  <a href="videos.html">Videos</a>
+                </li>
+                <li class="item">
+                  <a href="entertainment.html">Games & Podcast</a>
+                </li>
+              </ul>
+            </li>
+  
+            <li class="item">
+              <a href="resources.html">Resources</a>
+            </li>
+  
+            <li class="item">
+              <a href="notes.html">Diary</a>
+            </li>
+  
+            <li class="item">
+              <a href="main.html">Sign Out</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+  
+      <nav class="navbar">
+        <i class="fa-solid fa-bars" id="sidebar-close"></i>
+      </nav>
+  
+  
+
+    <div class="container">
+        <div class="text">
+            <h1>Watch Some Videos!</h1>
+            <p>Empower your journey: Unlock personal growth through the lens of inspiring videos. Elevate your mindset, embrace change, and discover new perspectives with the wisdom shared in every frame. 🌱🎥 #PersonalGrowth #VideoInspiration</p>
+        
+        
+            </div>
+        <div class="row">
+            <div class="col">
+                <div class="feature-img">
+                    <img src="picture1.png" width="100%">
+                    <img src="play.png" class="play-btn" onclick="playVideo('video1.mp4')">
+
+                </div>
+            </div>
+            <div class="col">
+                <div class="small-img-row">
+                    <div class="small-img">
+                    <img src="picture2.png">
+                    <img src="play.png" class="play-btn" onclick="playVideo('video2.mp4')">
+                    </div>
+                    <p class="text"><b>Full Self-Improvement Course: Level-Up Your Life (A 750k subs "thank-you")<br> <a href="https://www.youtube.com/@TheArtofImprovement" class="text">The Art of Improvement
+                    </a></b></p>
+                </div>
+                <div class="small-img-row">
+                    <div class="small-img">
+                        <img src="play.png" class="play-btn" onclick="playVideo('video3.mp4')">
+                    <img src="picture3.png">
+                    </div>
+                    <p class="text"><b>How to manage school and self improvement. (as a busy student)<br> <a href="https://www.youtube.com/@ItsMeRuff" class="text">Ruff</a></b></p>
+                </div>
+                <div class="small-img-row">
+                    <div class="small-img">
+                        <img src="play.png" class="play-btn" onclick="playVideo('video4.mp4')">
+                    <img src="picture4.png">
+                    </div>
+                    <p class="text"><b>How To Master Self-Control<br> <a href="https://www.youtube.com/@ImprovementPill" class="text">
+                        Improvement Pill
+                        </a></b></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="video-player" id="videoPlayer">
+        <video width="100%" controls autoplay id="myVideo">
+        <source src="video1.mp4" type="video/mp4" muted autoplay loop>
+        </video>
+        <img src="close.png" class="close-btn" onclick="stopVideo()">
+    </div>
+
+    <script src="script-navigation.js"></script>
+    <script>
+        var videoPlayer= document.getElementById("videoPlayer");
+        var myVideo= document.getElementById("myVideo");
+
+        function stopVideo(){
+            videoPlayer.style.display="none";
+        }
+
+        function playVideo(file){
+            myVideo.src=file;
+            videoPlayer.style.display="block";
+        }
+    </script>
+
+</body>
+</html>

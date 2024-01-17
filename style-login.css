@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+.ambot{ 
+  background-color: #4CAF50;
+  border: none;
+  color: white; 
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer; 
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  position: relative;
+  top:0;
+  left:0;
+
+  position: fixed;
+  top: 50px;
+
+  z-index: 5;
+  width: 100%;
+  display: flex;
+  justify-content: left;
+  text-decoration: none;
+  position: flex;
+    left: 0px;
+    text-decoration: none;
+}
+
+.logo-head {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+
+}
+
+.navbar img {
+  width: 50px;
+  height: 50px;
+  margin-left: 10px;
+
+}
+
+
+.back{
+  padding: 25px 50px 75px 100px;
+  position: fixed;
+  top: 100px;
+
+  z-index: 5;
+font-size: 20px;
+  display: flex;
+  justify-content: left;
+  text-decoration: none;
+  position: flex;
+    left: 0px;
+    text-decoration: none;
+    font-family: "sans-serif";
+}
+
+
+
+
+
+.parent-container {
+  display: flex;
+  justify-content: space-between;
+}
+.left-container {
+  float: left;
+  /* styles for the left container */
+  position: relative;
+    left: -100px;
+    color: white;
+    font-size: 20px;
+}
+
+.right-container {
+  float: right;
+  /* styles for the login form */
+}
+
+
+
+body{
+
+  background-image: url('backdropopo.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 70px 0;
+  height: 100vh;
+  width: 100%;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+::selection{
+  color: #fff;
+  background: #6CAEF8;
+}
+.wrapper{
+  width: 380px;
+  padding: 40px 30px 50px 30px;
+  background: #fff;
+  border-radius: 5px;
+  text-align: center;
+  box-shadow: 15px 15px 20px rgba(0,0,0,0.4);
+
+}
+.wrapper header{
+  color:#6CAEF8;
+  font-size: 35px;
+  font-weight: 600;
+}
+.wrapper form{
+  margin: 40px 0;
+}
+form .field{
+  width: 100%;
+  margin-bottom: 20px;
+}
+form .field.shake{
+  animation: shake 0.3s ease-in-out;
+}
+@keyframes shake {
+  0%, 100%{
+    margin-left: 0px;
+  }
+  20%, 80%{
+    margin-left: -12px;
+  }
+  40%, 60%{
+    margin-left: 12px;
+  }
+}
+form .field .input-area{
+  height: 50px;
+  width: 100%;
+  position: relative;
+}
+form input{
+  width: 100%;
+  height: 100%;
+  outline: none;
+  padding: 0 45px;
+  font-size: 18px;
+  background: none;
+  caret-color: #5372F0;
+  border-radius: 5px;
+  border: 1px solid #bfbfbf;
+  border-bottom-width: 2px;
+  transition: all 0.2s ease;
+}
+form .field input:focus,
+form .field.valid input{
+  border-color: #6CAEF8;
+}
+form .field.shake input,
+form .field.error input{
+  border-color: #dc3545;
+}
+.field .input-area i{
+  position: absolute;
+  top: 50%;
+  font-size: 18px;
+  pointer-events: none;
+  transform: translateY(-50%);
+}
+.input-area .icon{
+  left: 15px;
+  color: #bfbfbf;
+  transition: color 0.2s ease;
+}
+.input-area .error-icon{
+  right: 15px;
+  color: #dc3545;
+}
+form input:focus ~ .icon,
+form .field.valid .icon{
+  color: #6CAEF8;
+}
+form .field.shake input:focus ~ .icon,
+form .field.error input:focus ~ .icon{
+  color: #bfbfbf;
+}
+form input::placeholder{
+  color: #bfbfbf;
+  font-size: 17px;
+}
+form .field .error-txt{
+  color: #dc3545;
+  text-align: left;
+  margin-top: 5px;
+}
+form .field .error{
+  display: none;
+}
+form .field.shake .error,
+form .field.error .error{
+  display: block;
+}
+form .pass-txt{
+  text-align: left;
+  margin-top: -10px;
+}
+.wrapper a{
+  color: #6CAEF8;
+  text-decoration: none;
+}
+.wrapper a:hover{
+  text-decoration: underline;
+}
+form input[type="submit"]{
+  height: 50px;
+  margin-top: 30px;
+  color: #fff;
+  padding: 0;
+  border: none;
+  background: #6CAEF8;
+  cursor: pointer;
+  border-bottom: 2px solid rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+}
+form input[type="submit"]:hover{
+  background: #6CAEF8;
+}
+
+
+body{
+  font-family: Arial, sans-serif;
+}
+
+.button{
+  background-color: #6B6037;
+  border-radius: 50px;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 15px;
+  cursor: pointer;
+}
+
